@@ -1,4 +1,3 @@
-// server.js
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
@@ -7,7 +6,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 const app = express();
 const port = 3000;
 
-const genAI = new GoogleGenerativeAI("AIzaSyCc4i9uOEyCQomrIAE9kSq-f1S7tkwVWN0"); // Replace with your real API key
+const genAI = new GoogleGenerativeAI("AIzaSyCc4i9uOEyCQomrIAE9kSq-f1S7tkwVWN0"); // Replace with your actual API key
 
 app.use(cors());
 app.use(bodyParser.json());

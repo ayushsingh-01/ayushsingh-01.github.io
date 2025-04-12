@@ -1,4 +1,253 @@
-<!-- full code with landing page and chatbot -->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--  <meta charset="UTF-8" />-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+<!--  <title>Allergy Assistant Chatbot</title>-->
+<!--  <style>-->
+<!--    body {-->
+<!--      margin: 0;-->
+<!--      font-family: 'Segoe UI', sans-serif;-->
+<!--      background: #fff8f0;-->
+<!--      color: #333;-->
+<!--    }-->
+
+<!--    header {-->
+<!--      background: linear-gradient(to right, #7493be, #b4389d);-->
+<!--      color: #fff;-->
+<!--      padding: 30px 20px;-->
+<!--      text-align: center;-->
+<!--      box-shadow: 0 2px 10px rgba(0,0,0,0.1);-->
+<!--    }-->
+
+<!--    header h1 {-->
+<!--      font-size: 2.5rem;-->
+<!--      margin-bottom: 10px;-->
+<!--    }-->
+
+<!--    nav {-->
+<!--      background: #ffe0f0;-->
+<!--      padding: 12px 0;-->
+<!--      display: flex;-->
+<!--      justify-content: center;-->
+<!--      gap: 30px;-->
+<!--      position: sticky;-->
+<!--      top: 0;-->
+<!--      z-index: 100;-->
+<!--      box-shadow: 0 2px 5px rgba(0,0,0,0.05);-->
+<!--    }-->
+
+<!--    nav a {-->
+<!--      color: #2c0719;-->
+<!--      text-decoration: none;-->
+<!--      font-weight: 600;-->
+<!--      padding: 8px 12px;-->
+<!--      border-radius: 20px;-->
+<!--      transition: all 0.3s ease;-->
+<!--    }-->
+
+<!--    nav a:hover {-->
+<!--      background: #837178;-->
+<!--      color: #371a2d;-->
+<!--    }-->
+
+<!--    .section {-->
+<!--      padding: 50px 20px;-->
+<!--      max-width: 900px;-->
+<!--      margin: 40px auto;-->
+<!--      background: #ffffff;-->
+<!--      border-radius: 20px;-->
+<!--      box-shadow: 0 6px 20px rgba(255,192,203,0.2);-->
+<!--      transition: all 0.3s ease;-->
+<!--    }-->
+
+<!--    .section h2 {-->
+<!--      font-size: 1.8rem;-->
+<!--      color: #344b77;-->
+<!--      margin-bottom: 20px;-->
+<!--    }-->
+
+<!--    .chat-container {-->
+<!--      background: #6d69a2;-->
+<!--      width: 100%;-->
+<!--      max-width: 500px;-->
+<!--      height: 600px;-->
+<!--      border-radius: 20px;-->
+<!--      box-shadow: 0 8px 20px rgba(0,0,0,0.15);-->
+<!--      display: flex;-->
+<!--      flex-direction: column;-->
+<!--      margin: auto;-->
+<!--      overflow: hidden;-->
+<!--      border: 2px dashed #ffd1e8;-->
+<!--    }-->
+
+<!--    .messages {-->
+<!--      flex: 1;-->
+<!--      padding: 20px;-->
+<!--      overflow-y: auto;-->
+<!--      background: #fff0f5;-->
+<!--    }-->
+
+<!--    .message {-->
+<!--      margin: 12px 0;-->
+<!--      padding: 12px 16px;-->
+<!--      border-radius: 18px;-->
+<!--      max-width: 80%;-->
+<!--      font-size: 15px;-->
+<!--      line-height: 1.5;-->
+<!--      animation: fadeIn 0.4s ease forwards;-->
+<!--      box-shadow: 0 4px 10px rgba(0,0,0,0.08);-->
+<!--    }-->
+
+<!--    .user {-->
+<!--      align-self: flex-end;-->
+<!--      background: linear-gradient(to right, #f093fb, #f5576c);-->
+<!--      color: white;-->
+<!--      border-bottom-right-radius: 0;-->
+<!--    }-->
+
+<!--    .bot {-->
+<!--      align-self: flex-start;-->
+<!--      background: linear-gradient(to right, #a1c4fd, #c2e9fb);-->
+<!--      color: #003366;-->
+<!--      border-bottom-left-radius: 0;-->
+<!--    }-->
+
+<!--    .input-area {-->
+<!--      display: flex;-->
+<!--      border-top: 1px solid #ffcfe0;-->
+<!--      background: #fff0f5;-->
+<!--    }-->
+
+<!--    input[type="text"] {-->
+<!--      flex: 1;-->
+<!--      border: none;-->
+<!--      padding: 18px;-->
+<!--      font-size: 16px;-->
+<!--      background: #fff;-->
+<!--      outline: none;-->
+<!--      border-radius: 0;-->
+<!--    }-->
+
+<!--    button {-->
+<!--      background: #500d2e;-->
+<!--      color: white;-->
+<!--      border: none;-->
+<!--      padding: 0 25px;-->
+<!--      cursor: pointer;-->
+<!--      font-size: 16px;-->
+<!--      transition: background 0.3s ease;-->
+<!--    }-->
+
+<!--    button:hover {-->
+<!--      background: #3b051d;-->
+<!--    }-->
+
+<!--    @keyframes fadeIn {-->
+<!--      from { opacity: 0; transform: translateY(10px); }-->
+<!--      to { opacity: 1; transform: translateY(0); }-->
+<!--    }-->
+<!--  </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--  <header>-->
+<!--    <h1>Allergy Assistant</h1>-->
+<!--    <p>Your AI-powered food & environment allergy guide</p>-->
+<!--  </header>-->
+
+<!--  <nav>-->
+<!--    <a href="#chat">Chat</a>-->
+<!--    <a href="#about">About</a>-->
+<!--    <a href="#tips">Tips</a>-->
+<!--    <a href="#contact">Contact</a>-->
+<!--  </nav>-->
+
+<!--  <section class="section" id="about">-->
+<!--    <h2>About This Tool</h2>-->
+<!--    <p>This assistant helps people with food and environmental allergies. It gives smart advice, suggests alternatives, and even checks real-time pollen levels based on your location. All powered by a friendly chatbot.</p>-->
+<!--  </section>-->
+
+<!--  <section class="section" id="tips">-->
+<!--    <h2>Helpful Tips</h2>-->
+<!--    <ul>-->
+<!--      <li>Always read ingredient labels carefully.</li>-->
+<!--      <li>Use allergy-safe cooking tools to avoid cross-contamination.</li>-->
+<!--      <li>Track daily symptoms in a journal or app.</li>-->
+<!--      <li>Keep antihistamines or an epinephrine auto-injector nearby.</li>-->
+<!--    </ul>-->
+<!--  </section>-->
+
+<!--  <section class="section" id="chat">-->
+<!--    <h2>Allergy Chatbot</h2>-->
+<!--    <div class="chat-container">-->
+<!--      <div class="messages" id="chatBox"></div>-->
+<!--      <div class="input-area">-->
+<!--        <input type="text" id="userInput" placeholder="Type your message..." />-->
+<!--        <button onclick="sendMessage()">Send</button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+
+<!--  <section class="section" id="contact">-->
+<!--    <h2>Contact & Feedback</h2>-->
+<!--    <p>Have suggestions or questions? Reach out at <a href="mailto:allergybot@example.com">allergybot@example.com</a>.</p>-->
+<!--  </section>-->
+
+<!--  <script>-->
+<!--    let userAllergies = [];-->
+<!--    let userName = null;-->
+<!--    const chat = document.getElementById("chatBox");-->
+
+<!--    async function addMessage(message, sender) {-->
+<!--      const msg = document.createElement("div");-->
+<!--      msg.classList.add("message", sender);-->
+<!--      msg.textContent = message;-->
+<!--      chat.appendChild(msg);-->
+<!--      chat.scrollTop = chat.scrollHeight;-->
+<!--    }-->
+
+<!--    window.onload = () => {-->
+<!--      setTimeout(() => {-->
+<!--        addMessage("Hi there! 😊 What's your name?", "bot");-->
+<!--      }, 300);-->
+<!--    };-->
+
+<!--    async function sendMessage() {-->
+<!--      const input = document.getElementById("userInput");-->
+<!--      const message = input.value.trim();-->
+<!--      if (message === "") return;-->
+<!--      addMessage(message, "user");-->
+<!--      input.value = "";-->
+<!--      setTimeout(() => handleMessage(message), 500);-->
+<!--    }-->
+
+<!--    async function handleMessage(message) {-->
+<!--      const lower = message.toLowerCase();-->
+<!--      if (!userName) {-->
+<!--        userName = message;-->
+<!--        addMessage(`👋 Hello ${userName}! I'm your allergy assistant 🤖.`, "bot");-->
+<!--        addMessage("Tell me your allergens (e.g., 'milk') or ask about pollen 🌿!", "bot");-->
+<!--        return;-->
+<!--      }-->
+
+<!--      try {-->
+<!--        const response = await fetch("http://localhost:3000/chat", {-->
+<!--          method: "POST",-->
+<!--          headers: {-->
+<!--            "Content-Type": "application/json"-->
+<!--          },-->
+<!--          body: JSON.stringify({ message })-->
+<!--        });-->
+<!--        const data = await response.json();-->
+<!--        addMessage(data.reply, "bot");-->
+<!--      } catch (error) {-->
+<!--        console.error("Error:", error);-->
+<!--        addMessage("Sorry, I couldn't process your request right now.", "bot");-->
+<!--      }-->
+<!--    }-->
+<!--  </script>-->
+<!--</body>-->
+<!--</html>-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,211 +256,155 @@
   <title>Allergy Assistant Chatbot</title>
   <style>
     body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #fff8f0;
-  color: #333;
-}
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff8f0;
+      color: #333;
+    }
 
-header {
-  background: linear-gradient(to right, #7493be, #b4389d);
-  color: #fff;
-  padding: 30px 20px;
-  text-align: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
+    header {
+      background: linear-gradient(to right, #7493be, #b4389d);
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
 
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
 
-nav {
-  background: #ffe0f0;
-  padding: 12px 0;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
+    nav {
+      background: #ffe0f0;
+      padding: 12px 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
 
-nav a {
-  color: #2c0719;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 8px 12px;
-  border-radius: 20px;
-  transition: all 0.3s ease;
-}
+    nav a {
+      color: #2c0719;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
 
-nav a:hover {
-  background: #837178;
-  color: #371a2d;
-}
+    nav a:hover {
+      background: #837178;
+      color: #371a2d;
+    }
 
-.section {
-  padding: 50px 20px;
-  max-width: 900px;
-  margin: 40px auto;
-  background: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(255,192,203,0.2);
-  transition: all 0.3s ease;
-}
+    .section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: 40px auto;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(255,192,203,0.2);
+      transition: all 0.3s ease;
+    }
 
-.section h2 {
-  font-size: 1.8rem;
-  color: #344b77;
-  margin-bottom: 20px;
-}
+    .section h2 {
+      font-size: 1.8rem;
+      color: #344b77;
+      margin-bottom: 20px;
+    }
 
-ul {
-  list-style: circle inside;
-  color: #555;
-}
+    .chat-container {
+      background: #6d69a2;
+      width: 100%;
+      max-width: 500px;
+      height: 600px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      overflow: hidden;
+      border: 2px dashed #ffd1e8;
+    }
 
-.chat-container {
-  background: #6d69a2;
-  width: 100%;
-  max-width: 500px;
-  height: 600px;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  overflow: hidden;
-  border: 2px dashed #ffd1e8;
-}
+    .messages {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+      background: #fff0f5;
+    }
 
-.messages {
-  flex: 1;
-  padding: 20px;
-  overflow-y: auto;
-  background: #fff0f5;
-}
+    .message {
+      margin: 12px 0;
+      padding: 12px 16px;
+      border-radius: 18px;
+      max-width: 80%;
+      font-size: 15px;
+      line-height: 1.5;
+      animation: fadeIn 0.4s ease forwards;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
 
-.message {
-  margin: 12px 0;
-  padding: 12px 16px;
-  border-radius: 18px;
-  max-width: 80%;
-  font-size: 15px;
-  line-height: 1.5;
-  animation: fadeIn 0.4s ease forwards;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
+    .user {
+      align-self: flex-end;
+      background: linear-gradient(to right, #f093fb, #f5576c);
+      color: white;
+      border-bottom-right-radius: 0;
+    }
 
-.user {
-  align-self: flex-end;
-  background: linear-gradient(to right, #f093fb, #f5576c);
-  color: white;
-  border-bottom-right-radius: 0;
-}
+    .bot {
+      align-self: flex-start;
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      color: #003366;
+      border-bottom-left-radius: 0;
+    }
 
-.bot {
-  align-self: flex-start;
-  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
-  color: #003366;
-  border-bottom-left-radius: 0;
-}
+    .input-area {
+      display: flex;
+      border-top: 1px solid #ffcfe0;
+      background: #fff0f5;
+    }
 
-.input-area {
-  display: flex;
-  border-top: 1px solid #ffcfe0;
-  background: #fff0f5;
-}
+    input[type="text"] {
+      flex: 1;
+      border: none;
+      padding: 18px;
+      font-size: 16px;
+      background: #fff;
+      outline: none;
+      border-radius: 0;
+    }
 
-input[type="text"] {
-  flex: 1;
-  border: none;
-  padding: 18px;
-  font-size: 16px;
-  background: #fff;
-  outline: none;
-  border-radius: 0;
-}
+    button {
+      background: #500d2e;
+      color: white;
+      border: none;
+      padding: 0 25px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
 
-button {
-  background: #500d2e;
-  color: white;
-  border: none;
-  padding: 0 25px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background 0.3s ease;
-}
+    button:hover {
+      background: #3b051d;
+    }
 
-button:hover {
-  background: #3b051d;
-}
-
-a {
-  color: #925fcd;
-  text-decoration: underline;
-}
-/* Background Video Styling */
-#bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100vw;
-  min-height: 100vh;
-  object-fit: cover;
-  z-index: -1;
-  filter: brightness(60%) blur(2px);
-  opacity: 0.6; /* Adjust blend here */
-}
-
-/* Optional: make background slightly transparent to let video glow through */
-body {
-  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent overlay */
-  color: #fff;
-  backdrop-filter: blur(4px);
-}
-/* Content Styling: Make sure content stays visible above video */
-header, nav, .section {
-  position: relative;
-  z-index: 1; /* Put content above the video */
-}
-.section {
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-  border-radius: 15px;
-  padding: 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Light shadow to make content pop */
-  transition: all 0.3s ease;
-}
-
-.section h2 {
-  font-size: 2rem;
-  color: #344b77;
-}
-
-.section p {
-  font-size: 1.1rem;
-  color: #333;
-}
-
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
-    <video autoplay muted loop id="bg-video">
-        <source src="videoblocks-blowing-on-a-dandelion_bplvy95zew__fd08b69eeb182477f2d6f34ce74a8216__P360.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
   <header>
     <h1>Allergy Assistant</h1>
-    <p>Your AI-powered food & environment allergy guide</p>
+    <p>Your AI-powered food allergy guide</p>
   </header>
+
   <nav>
     <a href="#chat">Chat</a>
     <a href="#about">About</a>
@@ -221,7 +414,7 @@ header, nav, .section {
 
   <section class="section" id="about">
     <h2>About This Tool</h2>
-    <p>This assistant helps people with food and environmental allergies. It gives smart advice, suggests alternatives, and even checks real-time pollen levels based on your location. All powered by a friendly chatbot.</p>
+    <p>This assistant helps people with food allergies. It gives smart advice, suggests alternatives, and warns user. All powered by a friendly chatbot.</p>
   </section>
 
   <section class="section" id="tips">
@@ -230,7 +423,6 @@ header, nav, .section {
       <li>Always read ingredient labels carefully.</li>
       <li>Use allergy-safe cooking tools to avoid cross-contamination.</li>
       <li>Track daily symptoms in a journal or app.</li>
-      <li>Keep antihistamines or an epinephrine auto-injector nearby.</li>
     </ul>
   </section>
 
@@ -254,9 +446,8 @@ header, nav, .section {
     let userAllergies = [];
     let userName = null;
     const chat = document.getElementById("chatBox");
-    const knownAllergens = ["peanuts", "milk", "eggs", "wheat", "soy", "shellfish", "tree nuts"];
 
-    function addMessage(message, sender) {
+    async function addMessage(message, sender) {
       const msg = document.createElement("div");
       msg.classList.add("message", sender);
       msg.textContent = message;
@@ -266,97 +457,31 @@ header, nav, .section {
 
     window.onload = () => {
       setTimeout(() => {
-        addMessage("Hi there! 😊 What's your name?", "bot");
+        addMessage("Hi there please provide me with the food you want the detail of.", "bot");
       }, 300);
     };
 
-    function sendMessage() {
+    async function sendMessage() {
       const input = document.getElementById("userInput");
       const message = input.value.trim();
       if (message === "") return;
       addMessage(message, "user");
       input.value = "";
-      setTimeout(() => handleMessage(message), 500);
-    }
 
-    async function handleMessage(message) {
-      const lower = message.toLowerCase();
-
-      if (!userName) {
-        userName = message;
-        addMessage(`👋 Hello ${userName}! I'm your allergy assistant 🤖.`, "bot");
-        addMessage("Tell me your allergens (e.g., 'milk') or ask about pollen 🌿!", "bot");
-        return;
-      }
-
-      const mentioned = knownAllergens.filter(a => lower.includes(a));
-      if (mentioned.length > 0) {
-        mentioned.forEach(a => {
-          if (!userAllergies.includes(a)) userAllergies.push(a);
+      try {
+        const response = await fetch("http://localhost:5000/chat", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ message })
         });
-        addMessage(`Got it, ${userName}! You mentioned: ${mentioned.join(", ")}. I'll help you avoid those.`, "bot");
-        giveAvoidanceAdvice(mentioned);
-        return;
+        const data = await response.json();
+        addMessage(data.response, "bot");
+      } catch (error) {
+        console.error("Error:", error);
+        addMessage("Sorry, I couldn't process your request right now.", "bot");
       }
-
-      if (lower.startsWith("check")) {
-        const item = message.replace(/check /i, '').trim();
-        const ingredients = {
-          bread: ["wheat", "yeast", "salt"],
-          pizza: ["cheese", "tomato", "wheat"],
-          cake: ["eggs", "milk", "flour"],
-          smoothie: ["banana", "milk", "honey"]
-        };
-        const contains = ingredients[item.toLowerCase()] || [];
-        const conflict = contains.filter(i => userAllergies.includes(i));
-        if (conflict.length > 0) {
-          addMessage(`Hmm, ${item} might not be the best idea. It may contain: ${conflict.join(', ')}.`, "bot");
-          addMessage("Here are safer options:", "bot");
-          addMessage(`• Try items without ${conflict.join(", ")}\n• Double-check labels and ask staff.`, "bot");
-        } else {
-          addMessage(`${item} looks allergy-safe for you, ${userName}! 👍`, "bot");
-        }
-        return;
-      }
-
-      if (lower.includes("pollen") || lower.includes("environment")) {
-        getEnvironmentalAllergyData();
-        return;
-      }
-
-      addMessage(`Just type allergens like 'milk' or ask me to 'check pizza' or 'pollen level'. I'm here to help, ${userName}!`, "bot");
-    }
-
-    function giveAvoidanceAdvice(allergies) {
-      allergies.forEach(allergy => {
-        switch (allergy) {
-          case "peanuts":
-            addMessage("Avoid peanut oil, snacks, and mixed nuts. Keep epinephrine handy!", "bot");
-            addMessage("Try sunflower seed butter instead. 🌻", "bot");
-            break;
-          case "milk":
-            addMessage("Milk hides in cheese, cream, and chocolate. Read ingredients!", "bot");
-            addMessage("Use almond or oat milk as a substitute. 🥛", "bot");
-            break;
-          case "eggs":
-            addMessage("Baked goods, mayo, and some pasta contain eggs.", "bot");
-            addMessage("Use applesauce or flaxseed as a baking swap. 🥚❌", "bot");
-            break;
-          case "wheat":
-            addMessage("Wheat is in bread, pasta, cereals—watch for gluten.", "bot");
-            addMessage("Try rice, quinoa, or gluten-free alternatives. 🍚", "bot");
-            break;
-          default:
-            addMessage(`Avoid foods containing ${allergy}. Double-check labels and ask when in doubt.`, "bot");
-        }
-      });
-    }
- // Offline version: No location or API needed
- function getEnvironmentalAllergyData() {
-      addMessage("📍 Location-based pollen check is disabled for offline use.", "bot");
-      addMessage("🌿 Here's a sample report instead:", "bot");
-      addMessage("• Location: Springfield\n• Pollen Level: Moderate\n• Main Type: Tree Pollen", "bot");
-      addMessage("Tips: Stay indoors during peak hours, use HEPA filters, and wear sunglasses outside! 😎", "bot");
     }
   </script>
 </body>
