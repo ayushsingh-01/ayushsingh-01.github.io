@@ -248,7 +248,11 @@
 <!--  </script>-->
 <!--</body>-->
 <!--</html>-->
-<!DOCTYPE html>
+
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -484,5 +488,352 @@
       }
     }
   </script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Allergy Assistant Chatbot</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #7493be, #b4389d);
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background: #ffe0f0;
+      padding: 12px 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+      color: #2c0719;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background: #837178;
+      color: #371a2d;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: 40px auto;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(255,192,203,0.2);
+      transition: all 0.3s ease;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      color: #344b77;
+      margin-bottom: 20px;
+    }
+
+    .chat-container {
+      background: #6d69a2;
+      width: 100%;
+      max-width: 500px;
+      height: 600px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      overflow: hidden;
+      border: 2px dashed #ffd1e8;
+    }
+
+    .messages {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+      background: #fff0f5;
+    }
+
+    .message {
+      margin: 12px 0;
+      padding: 12px 16px;
+      border-radius: 18px;
+      max-width: 80%;
+      font-size: 15px;
+      line-height: 1.5;
+      animation: fadeIn 0.4s ease forwards;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .user {
+      align-self: flex-end;
+      background: linear-gradient(to right, #f093fb, #f5576c);
+      color: white;
+      border-bottom-right-radius: 0;
+    }
+
+    .bot {
+      align-self: flex-start;
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      color: #003366;
+      border-bottom-left-radius: 0;
+    }
+
+    .input-area {
+      display: flex;
+      border-top: 1px solid #ffcfe0;
+      background: #fff0f5;
+    }
+
+    input[type="text"] {
+      flex: 1;
+      border: none;
+      padding: 18px;
+      font-size: 16px;
+      background: #fff;
+      outline: none;
+      border-radius: 0;
+    }
+
+    button {
+      background: #500d2e;
+      color: white;
+      border: none;
+      padding: 0 25px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #3b051d;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    body.dark {
+  background: #1e1e2f;
+  color: #f0f0f0;
+}
+
+body.dark header {
+  background: linear-gradient(to right, #2c3e50, #4b79a1);
+  color: #fff;
+}
+
+body.dark nav {
+  background: #2e2e3a;
+}
+
+body.dark nav a {
+  color: #fff;
+}
+
+body.dark nav a:hover {
+  background: #555;
+  color: #ffd1e8;
+}
+
+body.dark .section {
+  background: #2b2b3a;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+body.dark .chat-container {
+  background: #383855;
+  border-color: #ffd1e8;
+}
+
+body.dark .messages {
+  background: #2f2f44;
+}
+
+body.dark .message.user {
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  color: #fff;
+}
+
+body.dark .message.bot {
+  background: linear-gradient(to right, #89f7fe, #66a6ff);
+  color: #002244;
+}
+
+body.dark input[type="text"] {
+  background: #444;
+  color: #fff;
+}
+
+body.dark .input-area {
+  background: #2f2f44;
+}
+
+body.dark button {
+  background: #6d1a3d;
+}
+
+body.dark button:hover {
+  background: #4a1029;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Allergy Assistant</h1>
+    <p>Your AI-powered food allergy guide</p>
+      <button id="themeToggle" onclick="toggleTheme()" style="margin-top: 10px; background: transparent; border: none; font-size: 1.2rem; color: #fff; cursor: pointer;">
+  🌙 Dark Mode
+</button>
+
+  </header>
+
+  <nav>
+    <a href="#chat">Chat</a>
+    <a href="#about">About</a>
+    <a href="#tips">Tips</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="section" id="about">
+    <h2>About This Tool</h2>
+    <p>This assistant helps people with food allergies. It gives smart advice, suggests alternatives, and warns users. All powered by a friendly chatbot.</p>
+  </section>
+
+  <section class="section" id="tips">
+    <h2>Helpful Tips</h2>
+    <ul>
+      <li>Always read ingredient labels carefully.</li>
+      <li>Use allergy-safe cooking tools to avoid cross-contamination.</li>
+      <li>Track daily symptoms in a journal or app.</li>
+    </ul>
+  </section>
+
+  <section class="section" id="chat">
+    <h2>Allergy Chatbot</h2>
+    <div class="chat-container">
+      <div class="messages" id="chatBox"></div>
+      <div class="input-area">
+        <input type="text" id="userInput" placeholder="Type your message..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact & Feedback</h2>
+    <p>Have suggestions or questions? Reach out at <a href="mailto:allergybot@example.com">allergybot@example.com</a>.</p>
+  </section>
+
+  <script>
+  let chatHistory = [];
+  const chat = document.getElementById("chatBox");
+
+  function addMessage(message, sender) {
+    const msg = document.createElement("div");
+    msg.classList.add("message", sender);
+    msg.textContent = message;
+    chat.appendChild(msg);
+    chat.scrollTop = chat.scrollHeight;
+    chatHistory.push({ sender, message });
+  }
+
+  window.onload = () => {
+    setTimeout(() => {
+      const welcome = "Hi there! Please provide the food you want details for.";
+      addMessage(welcome, "bot");
+    }, 300);
+
+    // Load saved theme
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark");
+      document.getElementById("themeToggle").textContent = "☀️ Light Mode";
+    }
+  };
+
+  async function sendMessage() {
+    const input = document.getElementById("userInput");
+    const message = input.value.trim();
+    if (message === "") return;
+
+    addMessage(message, "user");
+    input.value = "";
+
+    try {
+      const response = await fetch("http://localhost:5000/chat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          message,
+          history: chatHistory
+        })
+      });
+
+      const data = await response.json();
+      addMessage(data.response, "bot");
+    } catch (error) {
+      console.error("Error:", error);
+      addMessage("Sorry, I couldn't process your request right now.", "bot");
+    }
+  }
+
+  document.getElementById("userInput").addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      sendMessage();
+    }
+  });
+
+  // 🌗 Dark mode toggle
+  function toggleTheme() {
+    const body = document.body;
+    const toggleBtn = document.getElementById("themeToggle");
+
+    body.classList.toggle("dark");
+
+    if (body.classList.contains("dark")) {
+      toggleBtn.textContent = "☀️ Light Mode";
+      localStorage.setItem("theme", "dark");
+    } else {
+      toggleBtn.textContent = "🌙 Dark Mode";
+      localStorage.setItem("theme", "light");
+    }
+  }
+</script>
+
 </body>
 </html>
